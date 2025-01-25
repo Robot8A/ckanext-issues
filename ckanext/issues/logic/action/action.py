@@ -5,7 +5,7 @@ import ckan.logic as logic
 import ckan.plugins as p
 import ckan.model as model
 from ckan.lib import mailer
-if toolkit.check_ckan_version(min_version='2.9.0'):
+if p.toolkit.check_ckan_version(min_version='2.9.0'):
     from ckan.plugins.toolkit import render
 else:
     from ckan.lib.base import render_jinja2 as render
