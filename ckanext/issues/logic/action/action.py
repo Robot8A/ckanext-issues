@@ -167,7 +167,7 @@ def _get_comment_email_body(comment, issue_subject, user_obj, recipient):
                                  recipient)
     extra_vars['comment'] = comment
     return render('issues/email/new_comment.html',
-                         extra_vars=extra_vars)
+                  extra_vars=extra_vars)
 
 
 @validate(schema.issue_create_schema)
